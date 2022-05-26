@@ -1,0 +1,95 @@
+/* -------------------------------- VARIABLES ------------------------------- */
+$mainFont: "Inter", sans-serif;
+$fontOptionTwo: "Lexend", sans-serif;
+$fontOptionThree: "Orbitron", sans-serif;
+$fotnOptionFour: "Raleway", sans-serif;
+
+$letterColor: rgb(250, 250, 250);
+$gray: #ececec;
+$darkGray: #222831;
+$darkBlue: #30475e;
+$red: #f05454;
+/* -------------------------------------------------------------------------- */
+/* --------------------- RESET DE STYLES DEFAULT BROWSER -------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}
+/* --------------------------- HEADER & NAV STYLES -------------------------- */
+
+.mainHeader {
+  max-height: 700px;
+  .headerBefore {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+.addContainer {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .add {
+    width: 900px;
+    background-color: $red;
+    text-align: center;
+    .txtAdd {
+      margin-bottom: 0;
+    }
+  }
+}
+.logoContactWidgetsContainer {
+  background-color: $gray;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  .contactWidgets {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      margin: 0;
+    }
+    .contactIcons {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      margin-right: 8px;
+      font-size: 20px;
+    }
+    .contactInfo {
+      margin-bottom: 3px;
+      align-items: baseline;
+    }
+  }
+}
+.mainNav {
+  margin-top: 0;
+  background-color: $darkBlue;
+  .menu {
+    color: $letterColor;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    .menuItem {
+      padding: 8px 25px 8px 0;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* --------------------- RESET DE STYLES DEFAULT BROWSER -------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif; }
+
+/* --------------------------- HEADER & NAV STYLES -------------------------- */
+.mainHeader {
+  max-height: 700px; }
+  .mainHeader .headerBefore {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+
+.addContainer {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .addContainer .add {
+    width: 900px;
+    background-color: #f05454;
+    text-align: center; }
+    .addContainer .add .txtAdd {
+      margin-bottom: 0; }
+
+.logoContactWidgetsContainer {
+  background-color: #ececec;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .logoContactWidgetsContainer .logo {
+    width: 100px;
+    height: 100px; }
+  .logoContactWidgetsContainer .contactWidgets {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .logoContactWidgetsContainer .contactWidgets p {
+      margin: 0; }
+    .logoContactWidgetsContainer .contactWidgets .contactIcons {
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
+      margin-right: 8px;
+      font-size: 20px; }
+    .logoContactWidgetsContainer .contactWidgets .contactInfo {
+      margin-bottom: 3px;
+      align-items: baseline; }
+
+.mainNav {
+  margin-top: 0;
+  background-color: #30475e; }
+  .mainNav .menu {
+    color: #fafafa;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end; }
+    .mainNav .menu .menuItem {
+      padding: 8px 25px 8px 0; }
