@@ -5,11 +5,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif; }
+  font-family: "Orbitron", sans-serif; }
 
 /* --------------------------- HEADER & NAV STYLES -------------------------- */
 .mainHeader {
-  max-height: 700px; }
+  max-height: 800px;
+  overflow-y: hidden; }
   .mainHeader .headerBefore {
     width: 100%;
     height: 100%;
@@ -18,56 +19,114 @@
     right: 0;
     z-index: 10; }
 
-.addContainer {
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .addContainer .add {
-    width: 900px;
-    background-color: #f05454;
-    text-align: center; }
-    .addContainer .add .txtAdd {
-      margin-bottom: 0; }
-
-.logoContactWidgetsContainer {
+.logo__contactWidgets__container {
   background-color: #ececec;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .logoContactWidgetsContainer .logo {
+  .logo__contactWidgets__container .logo {
     width: 100px;
-    height: 100px; }
-  .logoContactWidgetsContainer .contactWidgets {
-    width: 250px;
-    height: 80px;
+    height: 100px;
+    background-color: #2e66dd;
+    margin-left: 30px; }
+  .logo__contactWidgets__container .contactWidgets {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    .logoContactWidgetsContainer .contactWidgets p {
-      margin: 0; }
-    .logoContactWidgetsContainer .contactWidgets .contactIcons {
-      display: flex;
-      flex-direction: column;
-      justify-content: baseline;
-      align-items: center;
-      margin-right: 8px;
-      font-size: 20px; }
-    .logoContactWidgetsContainer .contactWidgets .contactInfo {
-      margin-bottom: 3px;
-      align-items: baseline; }
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 300;
+    margin-right: 30px;
+    color: #303030; }
+  .logo__contactWidgets__container .contactWidgets [class*="icon-"]:before {
+    position: relative;
+    font-size: 23px;
+    top: 3px;
+    right: 10px; }
 
 .mainNav {
   margin-top: 0;
-  background-color: #30475e; }
+  background-color: #222831;
+  width: 100%; }
+  .mainNav .icon-menu {
+    display: none; }
   .mainNav .menu {
-    color: #fafafa;
+    width: 100%;
     list-style: none;
-    padding: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: end; }
-    .mainNav .menu .menuItem {
-      padding: 8px 25px 8px 0; }
+    justify-content: center; }
+    .mainNav .menu .menuItem [class*="icon-"]:before {
+      position: relative;
+      top: 3px;
+      left: 2px;
+      font-size: 20px;
+      border: none; }
+    .mainNav .menu .menuItem .animation_border {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      color: rgba(250, 250, 250, 0.675);
+      position: relative; }
+    .mainNav .menu .menuItem .animation_border:after {
+      content: "";
+      position: absolute;
+      background-color: #2e66dd;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: -10px;
+      transition: 0.4s; }
+    .mainNav .menu .menuItem .animation_border:hover {
+      color: #fff; }
+    .mainNav .menu .menuItem .animation_border:hover:after {
+      width: 100%; }
+    .mainNav .menu .menuItem .select {
+      color: #2e66dd; }
+  .mainNav .submenu {
+    list-style: none;
+    background-color: #394350;
+    width: 100%; }
+  .mainNav .submenu-link {
+    text-decoration: none;
+    color: rgba(46, 101, 221, 0.466); }
+
+/* ------------------------------- RESPONSIVE ------------------------------- */
+@media only screen and (max-width: 600px) {
+  .logo__contactWidgets__container .logo {
+    margin-left: 10px; }
+  .logo__contactWidgets__container .contactWidgets {
+    margin-right: 10px; }
+  .mainNav {
+    height: 60px;
+    position: relative; }
+    .mainNav .btnMenu {
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 45px;
+      height: 45px;
+      font-size: 35px;
+      border: 1px solid rgba(250, 250, 250, 0.675);
+      border-radius: 8px;
+      color: #ececec;
+      cursor: pointer; }
+    .mainNav .btnMenu:hover {
+      color: #2e66dd;
+      transition: 0.3s; }
+    .mainNav .menu {
+      display: block;
+      background-color: #29303a;
+      position: relative;
+      top: 60px; }
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 1fr;
+    grid-template-areas: "head" "slider"; }
+    .mainGrid .mainGrid__slider {
+      grid-area: slider; }
+    .mainGrid .headerBefore {
+      grid-area: head; } }
