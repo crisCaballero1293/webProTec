@@ -18,6 +18,17 @@
     top: 0;
     right: 0;
     z-index: 10; }
+  .mainHeader #carouselExampleSlidesOnly {
+    position: relative; }
+  .mainHeader .filter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #2e66dd;
+    opacity: 0.5; }
 
 .logo__contactWidgets__container {
   background-color: #ececec;
@@ -43,14 +54,13 @@
     top: 3px;
     right: 10px; }
 
-.mainNav .nav-bar {
+.mainNav .btnMenuContainer {
   background-color: #222831;
   padding: 10px;
   display: block;
   color: #ececec;
   font-size: 2em;
   text-align: end;
-  cursor: pointer;
   width: 100%; }
 
 .mainNav .menuItem {
@@ -80,7 +90,7 @@
   transition: all 0.4s; }
 
 .mainNav .submenu .menu-link {
-  background-color: #394350;
+  background-color: #3f4a57;
   padding-left: 50px;
   font-size: 15px; }
 
@@ -90,6 +100,106 @@
 
 .mainNav .mostrar {
   margin-left: 0; }
+
+.mainNav #btnMenu:hover {
+  color: #2e66dd;
+  cursor: pointer;
+  transition: 0.4s; }
+
+.mainNav .select {
+  color: #2e66dd; }
+
+.mainNav .menu .menu-link:hover {
+  color: #fff;
+  transition: all 0.3s; }
+
+.mainNav .submenu .menu-link:hover {
+  color: #2e66dd;
+  transition: all 0.3s; }
+
+/* ------------------------------ ESTILOS MAIN ------------------------------ */
+.main .sectionOne .title,
+.main .sectionTwo .title,
+.main .contactForm .title {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 500; }
+
+.main .sectionOne .parrafo,
+.main .sectionTwo .parrafo,
+.main .contactForm .parrafo {
+  text-align: justify; }
+
+.main .sectionOne .txtContainer,
+.main .sectionTwo .txtContainer,
+.main .contactForm .txtContainer {
+  text-align: center;
+  padding: 50px;
+  background-color: #3943;
+  max-width: 1024px;
+  margin: auto; }
+
+.mainFooter .mainFooterSection__container {
+  width: 100%;
+  height: 300px;
+  background-color: #3f4a57;
+  color: rgba(250, 250, 250, 0.675);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.mainFooter .mainFooterSection-content {
+  background-color: #77cbce;
+  width: 50%;
+  height: 80%; }
+
+/* ------------------------------ ESTILOS FORM ------------------------------ */
+.contactForm {
+  display: block;
+  width: 100%; }
+  .contactForm .contactForm__txtContainer {
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: center; }
+  .contactForm .formContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 20px 20px 20px; }
+  .contactForm .form {
+    width: 95%;
+    margin: 0 auto;
+    border: 0.5px solid #3f4a57;
+    border-radius: 5px; }
+    .contactForm .form label {
+      display: block;
+      padding: 20px 0;
+      width: 280px;
+      margin: 0 auto; }
+    .contactForm .form input {
+      display: block;
+      width: 280px;
+      height: 40px;
+      border: 0.5px solid #3f4a57;
+      border-radius: 5px;
+      margin: 0 auto; }
+    .contactForm .form textarea {
+      border: 0.5px solid #3f4a57;
+      border-radius: 5px;
+      max-width: 280px;
+      max-height: 300px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 30px; }
+    .contactForm .form .btnForm {
+      margin-bottom: 25px;
+      color: rgba(250, 250, 250, 0.675);
+      background: #495767; }
+    .contactForm .form .btnForm:hover {
+      color: #fff;
+      transition: 0.4s;
+      background-color: #2e66dd;
+      border: none; }
 
 /* ------------------------------- RESPONSIVE ------------------------------- */
 @media only screen and (max-width: 600px) {
@@ -104,7 +214,7 @@
       grid-area: head; } }
 
 @media only screen and (min-width: 1024px) {
-  .mainNav .nav-bar {
+  .mainNav .btnMenuContainer {
     display: none; }
   .mainNav .menu {
     margin-left: 0;
@@ -127,85 +237,4 @@
       width: 200px; }
   .mainNav .container-submenu:hover .submenu {
     opacity: 1;
-    visibility: visible; }
-  .mainNav .select {
-    color: #2e66dd; }
-  .mainNav .menu .menu-link:hover {
-    color: #fff;
-    transition: all 0.3s; }
-  .mainNav .submenu .menu-link:hover {
-    color: #2e66dd;
-    transition: all 0.3s; } }
-
-/* 
-margin-top: 0;
-  background-color: $darkGray;
-  width: 100%;
-  .icon-menu {
-    display: none;
-  }
-  .menu {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    .menuItem [class*="icon-"]:before {
-      position: relative;
-      top: 3px;
-      left: 2px;
-      font-size: 20px;
-      border: none;
-    }
-    .menuItem {
-      padding: 15px;
-      .animation_border {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        color: $letterColor;
-        padding-bottom: 0;
-        position: relative;
-      }
-      .animation_border:after {
-        content: "";
-        position: absolute;
-        background-color: $blue;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.4s;
-      }
-      .animation_border:hover {
-        color: #fff;
-      }
-      .animation_border:hover:after {
-        width: 100%;
-      }
-      .select {
-        color: $blue;
-      }
-    }
-  }
-  .submenu {
-    list-style: none;
-    background-color: $ligthGray;
-    padding-left: 10px;
-    margin-top: 15px;
-  }
-
-  .submenuItem {
-    padding: 6px;
-  }
-  .submenu-link {
-    text-decoration: none;
-    color: $mediumBlue;
-  }
-  .submenu-link:hover {
-    color: $letterColor;
-    transition: 0.4s;
-  }
- */
+    visibility: visible; } }

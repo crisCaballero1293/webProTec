@@ -12,7 +12,7 @@ $letterBlue: #303030;
 $gray: #ececec;
 $darkGray: #222831;
 $mediumGray: #29303a;
-$ligthGray: #394350;
+$ligthGray: #3f4a57;
 $darkBlue: #30475eea;
 $red: #f05454;
 $blue: rgb(46, 102, 221);
@@ -37,6 +37,19 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
     top: 0;
     right: 0;
     z-index: 10;
+  }
+  #carouselExampleSlidesOnly {
+    position: relative;
+  }
+  .filter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    opacity: 0.5;
   }
 }
 .logo__contactWidgets__container {
@@ -68,14 +81,13 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
 }
 
 .mainNav {
-  .nav-bar {
+  .btnMenuContainer {
     background-color: $darkGray;
     padding: 10px;
     display: block;
     color: $gray;
     font-size: 2em;
     text-align: end;
-    cursor: pointer;
     width: 100%;
   }
   .menuItem {
@@ -118,6 +130,120 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
   .mostrar {
     margin-left: 0;
   }
+  #btnMenu:hover {
+    color: $blue;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .select {
+    color: $blue;
+  }
+  .menu .menu-link:hover {
+    color: #fff;
+    transition: all 0.3s;
+  }
+  .submenu .menu-link:hover {
+    color: $blue;
+    transition: all 0.3s;
+  }
+}
+
+/* ------------------------------ ESTILOS MAIN ------------------------------ */
+
+.main {
+  .sectionOne,
+  .sectionTwo,
+  .contactForm {
+    .title {
+      margin-bottom: 30px;
+      font-size: 35px;
+      font-weight: 500;
+    }
+    .parrafo {
+      text-align: justify;
+    }
+    .txtContainer {
+      text-align: center;
+      padding: 50px;
+      background-color: #3943;
+      max-width: 1024px;
+      margin: auto;
+    }
+  }
+}
+.mainFooter {
+  .mainFooterSection__container {
+    width: 100%;
+    height: 300px;
+    background-color: $ligthGray;
+    color: $letterColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainFooterSection-content {
+    background-color: rgb(119, 203, 206);
+    width: 50%;
+    height: 80%;
+  }
+}
+
+/* ------------------------------ ESTILOS FORM ------------------------------ */
+
+.contactForm {
+  display: block;
+  width: 100%;
+  .contactForm__txtContainer {
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: center;
+  }
+  .formContainer {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0px 20px 20px 20px;
+  }
+  .form {
+    width: 95%;
+    margin: 0 auto;
+    border: 0.5px solid $ligthGray;
+    border-radius: 5px;
+    label {
+      display: block;
+      padding: 20px 0;
+      width: 280px;
+      margin: 0 auto;
+    }
+    input {
+      display: block;
+      width: 280px;
+      height: 40px;
+      border: 0.5px solid $ligthGray;
+      border-radius: 5px;
+      margin: 0 auto;
+    }
+    textarea {
+      border: 0.5px solid $ligthGray;
+      border-radius: 5px;
+      max-width: 280px;
+      max-height: 300px;
+      display: block;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    .btnForm {
+      margin-bottom: 25px;
+      color: $letterColor;
+      background: #495767;
+    }
+    .btnForm:hover {
+      color: #fff;
+      transition: 0.4s;
+      background-color: $blue;
+      border: none;
+    }
+  }
 }
 
 /* ------------------------------- RESPONSIVE ------------------------------- */
@@ -142,7 +268,7 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
 
 @media only screen and (min-width: "1024px") {
   .mainNav {
-    .nav-bar {
+    .btnMenuContainer {
       display: none;
     }
     .menu {
@@ -172,89 +298,5 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
       opacity: 1;
       visibility: visible;
     }
-    .select {
-      color: $blue;
-    }
-    .menu .menu-link:hover {
-      color: #fff;
-      transition: all 0.3s;
-    }
-    .submenu .menu-link:hover {
-      color: $blue;
-      transition: all 0.3s;
-    }
   }
 }
-
-/* 
-margin-top: 0;
-  background-color: $darkGray;
-  width: 100%;
-  .icon-menu {
-    display: none;
-  }
-  .menu {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-    .menuItem [class*="icon-"]:before {
-      position: relative;
-      top: 3px;
-      left: 2px;
-      font-size: 20px;
-      border: none;
-    }
-    .menuItem {
-      padding: 15px;
-      .animation_border {
-        text-decoration: none;
-        font-size: 18px;
-        font-weight: 500;
-        color: $letterColor;
-        padding-bottom: 0;
-        position: relative;
-      }
-      .animation_border:after {
-        content: "";
-        position: absolute;
-        background-color: $blue;
-        height: 3px;
-        width: 0;
-        left: 0;
-        bottom: -10px;
-        transition: 0.4s;
-      }
-      .animation_border:hover {
-        color: #fff;
-      }
-      .animation_border:hover:after {
-        width: 100%;
-      }
-      .select {
-        color: $blue;
-      }
-    }
-  }
-  .submenu {
-    list-style: none;
-    background-color: $ligthGray;
-    padding-left: 10px;
-    margin-top: 15px;
-  }
-
-  .submenuItem {
-    padding: 6px;
-  }
-  .submenu-link {
-    text-decoration: none;
-    color: $mediumBlue;
-  }
-  .submenu-link:hover {
-    color: $letterColor;
-    transition: 0.4s;
-  }
- */

@@ -51,6 +51,8 @@
        <img src="./img/cameras/2.jpg" class="d-block w-100" alt="carousel img">
       </div>
      </div>
+     <div class="filter">
+     </div>
     </div>
    </div>
    <!-- ----------------------------------------------------------------------- -->
@@ -65,7 +67,9 @@
      </div>
     </div>
     <nav class="mainNav">
-     <span class="icon-menu nav-bar" id="btnMenu"></span>
+     <div class="btnMenuContainer">
+      <span class="icon-menu nav-bar" id="btnMenu"></span>
+     </div>
      <ul class="menu" id="menu">
       <li class="menuItem"><a href="#" class="animation_border select menu-link">Inicio</a></li>
       <li class="menuItem"><a href="#" class="animation_border menu-link">Nosotros</a></li>
@@ -117,10 +121,62 @@
   </div>
  </header>
  <main class="main">
-
+  <section class="sectionOne">
+   <div class="sectionOne txtContainer">
+    <h3 class="title">Nosotros</h3>
+    <p class="parrafo">
+     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, repellendus laborum. Iste repellendus at
+     ipsa neque, nihil laudantium accusamus animi quo voluptate, voluptates, corrupti id deleniti nulla enim ullam nobis
+     laborum. Distinctio, modi. Necessitatibus nisi fuga alias numquam commodi, in veniam asperiores ex quisquam omnis
+     eius cum pariatur nihil dolor?
+    </p>
+   </div>
+  </section>
+  <section class="sectionTwo">
+   <div class="sectionOne txtContainer">
+    <h3 class="title">Servicios</h3>
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, repellendus laborum. Iste
+     repellendus at
+     ipsa neque, nihil laudantium accusamus animi quo voluptate, voluptates, corrupti id deleniti nulla enim ullam nobis
+     laborum. Distinctio, modi. Necessitatibus nisi fuga alias numquam commodi, in veniam asperiores ex quisquam omnis
+     eius cum pariatur nihil dolor?</p>
+   </div>
+  </section>
+  <section class="contactForm">
+   <div class="contactForm__txtContainer">
+    <h3 class="title">Contáctanos</h3>
+   </div>
+   <div class="formContainer">
+    <form action="post" class="form">
+     <label for="name">Nombre:</label>
+     <input type="text" id="name">
+     <label for="lastName">Apellido:</label>
+     <input type="text" id="lastName">
+     <label for="email">Email:</label>
+     <input type="email" id="email">
+     <label for="tel">Teléfono:</label>
+     <input type="number" id="number">
+     <label for="msn">Tu mensaje:</label>
+     <textarea name="Tu mensaje:" id="msn" cols="30" rows="10"></textarea>
+     <input type="submit" value="Enviar" class="btnForm">
+    </form>
+   </div>
+  </section>
  </main>
  <footer class="mainFooter">
+  <section class="mainFooterSection">
+   <div class="mainFooterSection__container">
+    <div class="mainFooterSection-content">
 
+    </div>
+    <div class="mainFooterSection-content">
+
+    </div>
+    <div class="mainFooterSection-content">
+
+    </div>
+   </div>
+  </section>
  </footer>
  <script src="/js/menu.js"></script>
 </body>
