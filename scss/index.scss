@@ -41,6 +41,18 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
   #carouselExampleSlidesOnly {
     position: relative;
   }
+  .bannerTxt {
+    width: 90%;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    h1 {
+      color: #fff;
+      font-size: 3em;
+    }
+  }
   .filter {
     position: absolute;
     display: block;
@@ -53,30 +65,33 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
   }
 }
 .logo__contactWidgets__container {
-  background-color: $gray;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   .logo {
-    width: 100px;
-    height: 100px;
-    background-color: $blue;
-    margin-left: 30px;
+    padding: 15px;
+    img {
+      width: 100px;
+      height: 100px;
+    }
   }
   .contactWidgets {
     display: flex;
     flex-direction: column;
     font-size: 18px;
     font-weight: 300;
-    margin-right: 30px;
-    color: $letterBlue;
+    color: #fff;
   }
   .contactWidgets [class*="icon-"]:before {
     position: relative;
     font-size: 23px;
     top: 3px;
     right: 10px;
+  }
+  .contactWidgets [class*="icon-whats"]:before {
+    font-size: 25px;
+    top: 4px;
   }
 }
 
@@ -171,23 +186,6 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
     }
   }
 }
-.mainFooter {
-  .mainFooterSection__container {
-    width: 100%;
-    height: 300px;
-    background-color: $ligthGray;
-    color: $letterColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mainFooterSection-content {
-    background-color: rgb(119, 203, 206);
-    width: 50%;
-    height: 80%;
-  }
-}
-
 /* ------------------------------ ESTILOS FORM ------------------------------ */
 
 .contactForm {
@@ -245,13 +243,89 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
     }
   }
 }
+/* ----------------------------- ESTILOS FOOTER ----------------------------- */
+.mainFooter {
+  background-color: $ligthGray;
+  .mainFooterSection__container {
+    margin: auto;
+    width: 80%;
+    color: $letterColor;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .mainFooterSection-content {
+    width: 31%;
+    text-align: center;
+    h4 {
+      padding: 20px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .logoFooter-container {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .social {
+    a {
+      text-decoration: none;
+      color: $letterColor;
+    }
+    a:hover {
+      color: #fff;
+    }
+  }
+  .social a [class*="icon-"]:before {
+    font-size: 28px;
+    padding: 5px;
+  }
+  .social a [class*="icon-whats"]:before {
+    left: 1px;
+  }
+
+  //iconos footer tel.
+  .phone {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .mainFooterSection-content [class*="icon-"]:before {
+    position: relative;
+    font-size: 23px;
+    top: 6px;
+    right: 5px;
+  }
+  .copy {
+    p {
+      margin: 0;
+    }
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    .copyTxt {
+      color: #fff;
+      font-size: 0.8em;
+      padding-top: 100px;
+    }
+    .author {
+      font-size: 12px;
+      color: #fff;
+      padding: 15px;
+      padding-bottom: 40px;
+    }
+  }
+}
 
 /* ------------------------------- RESPONSIVE ------------------------------- */
 @media only screen and (max-width: "600px") {
   .mainGrid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 160px 1fr;
+    grid-template-rows: 352px 1fr;
     grid-template-areas:
       "head"
       "slider";
@@ -264,8 +338,52 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
       grid-area: head;
     }
   }
+  .logo__contactWidgets__container {
+    flex-direction: column;
+    .logo {
+      margin: auto;
+      padding: 25px;
+    }
+    .contactWidgets {
+      margin: auto;
+      padding: 25px;
+    }
+  }
+  .logo__contactWidgets__container {
+    .contactWidgets {
+      color: $letterBlue;
+    }
+    .logo {
+      margin-top: 25px;
+    }
+  }
+  .mainHeader {
+    .bannerTxt {
+      top: 47%;
+      left: 50%;
+      h1 {
+        color: #fff;
+        font-size: 2em;
+      }
+    }
+  }
+  .mainFooterSection__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mainFooterSection-content {
+      width: 80%;
+      margin: 25px;
+    }
+  }
 }
-
+@media only screen and (min-width: "600px") {
+  .mainFooterSection__container {
+    .mainFooterSection-content {
+      margin-top: 40px;
+    }
+  }
+}
 @media only screen and (min-width: "1024px") {
   .mainNav {
     .btnMenuContainer {
@@ -297,6 +415,19 @@ $mediumBlue: rgba(46, 101, 221, 0.466);
     .container-submenu:hover .submenu {
       opacity: 1;
       visibility: visible;
+    }
+  }
+  .logo__contactWidgets__container {
+    width: 90%;
+  }
+  .mainHeader {
+    .bannerTxt {
+      top: 45%;
+      left: 50%;
+      h1 {
+        color: #fff;
+        font-size: 5em;
+      }
     }
   }
 }
