@@ -1,0 +1,33 @@
+main .grid__services {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, 1fr); }
+  main .grid__services .containerFlex {
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgba(246, 246, 246, 0.675);
+    display: flex; }
+  main .grid__services .imgContainer {
+    width: 50%; }
+    main .grid__services .imgContainer img {
+      width: 100%;
+      height: 350px; }
+  main .grid__services .txtContainer {
+    width: 45%;
+    margin: auto;
+    text-align: center; }
+    main .grid__services .txtContainer h5 {
+      padding-bottom: 40px; }
+    main .grid__services .txtContainer p {
+      text-align: justify; }
+
+@media only screen and (max-width: 600px) {
+  .main .grid__services {
+    margin-top: 0; }
+    .main .grid__services .imgContainer img {
+      height: 250px; }
+    .main .grid__services .txtContainer h5 {
+      padding: 10px;
+      margin-top: -12px; }
+    .main .grid__services .txtContainer p {
+      font-size: 12px; } }

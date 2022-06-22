@@ -1,0 +1,112 @@
+/* -------------------------------- VARIABLES ------------------------------- */
+/* -------------------------------------------------------------------------- */
+.mainHeader .mainGrid {
+  grid-template-rows: 275px 1fr; }
+
+.mainHeader .banner {
+  grid-area: slider;
+  position: relative; }
+  .mainHeader .banner .bannerTxt {
+    width: 100%; }
+    .mainHeader .banner .bannerTxt h1 {
+      display: block;
+      width: 100%; }
+  .mainHeader .banner .img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover; }
+
+.mainHeader .banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 101, 221, 0.466); }
+
+.main p {
+  font-family: "Lexend", sans-serif; }
+
+.main .title {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+
+.main .main__about__description {
+  margin: auto;
+  margin-bottom: 100px;
+  max-width: 1500px; }
+  .main .main__about__description .txtContainer {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 100px; }
+    .main .main__about__description .txtContainer p {
+      font-size: 17px; }
+  .main .main__about__description .imgContainer {
+    width: 90%;
+    margin: auto; }
+    .main .main__about__description .imgContainer img {
+      display: block;
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px; }
+
+.main .separador {
+  width: 900px;
+  margin: auto;
+  margin-bottom: 70px; }
+
+.main .main__about__bottom {
+  margin: auto;
+  margin-bottom: 200px;
+  max-width: 1500px; }
+  .main .main__about__bottom .content {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    margin-bottom: 80px; }
+    .main .main__about__bottom .content .vision {
+      text-align: right; }
+    .main .main__about__bottom .content p {
+      font-size: 17px; }
+  .main .main__about__bottom .subTitle {
+    padding: 40px 0;
+    font-size: 2em; }
+  .main .main__about__bottom .ul {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(246, 246, 246, 0.675);
+    padding: 20px 0;
+    border-radius: 10px; }
+    .main .main__about__bottom .ul ul {
+      margin: 0; }
+      .main .main__about__bottom .ul ul li {
+        list-style: none;
+        font-size: 1.1em;
+        font-family: "Lexend", sans-serif; }
+  .main .main__about__bottom ul [class*="icon-"]:before {
+    position: relative;
+    top: 3.5px;
+    right: 6px;
+    font-size: 20px;
+    color: #18bc18; }
+
+@media only screen and (max-width: 1024px) {
+  .mainHeader .banner .bannerTxt {
+    top: 46%;
+    left: 50%;
+    font-size: 2em; } }
+
+@media only screen and (max-width: 600px) {
+  .mainHeader .banner .bannerTxt {
+    top: 55%;
+    left: 50%;
+    font-size: 1.5em; } }
+
+@media only screen and (min-width: 600px) {
+  .mainHeader .banner .img {
+    height: 1000px; } }

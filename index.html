@@ -5,7 +5,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>INICIO</title>
+ <title>Inicio</title>
  <!-- ------------------------------ BOOTSTRAP ------------------------------ -->
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -29,6 +29,8 @@
  <!-- -------------------------------------------------- -->
  <!-- ---------------------SEO---------------------- -->
  <!-- -------------------------------------------------- -->
+ <link rel="stylesheet" href="./css/splide.min.css">
+ <script src="./js/splide.min.js"></script>
 </head>
 
 <body>
@@ -39,16 +41,13 @@
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
      <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
-       <img src="./img/cameras/1.jpg" class="d-block w-100" alt="carousel img">
-      </div>
-      <div class="carousel-item" data-bs-interval="5000">
-       <img src="./img/biometric/2.jpg" class="d-block w-100" alt="carousel img">
+       <img src="./img/banner.png" class="d-block w-100" alt="carousel img">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
        <img src="./img/office/3.jpg" class="d-block w-100" alt="carousel img">
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-       <img src="./img/cameras/2.jpg" class="d-block w-100" alt="carousel img">
+       <img src="./img/cameras/11.jpg" class="d-block w-100" alt="carousel img">
       </div>
      </div>
      <div class="filter">
@@ -56,17 +55,26 @@
     </div>
    </div>
    <!-- ----------------------------------------------------------------------- -->
+   <!--  <div class="banner">
+    <div class="bannerTxt">
+     <h1>Lideres En Seguridad Y Tecnología</h1>
+    </div>
+    <div class="bannerImg">
+     <img class="img" src="../img/banner.png" alt="iamgen">
+    </div>
+   </div> -->
    <div class="bannerTxt">
-    <h1>Lideres En Seguridad y Tecnología</h1>
+    <h1>Protección y Tecnología</h1>
+    <p>Expertos En Tú Seguridad</p>
    </div>
    <div class="headerBefore">
     <div class="logo__contactWidgets__container">
      <div class="logo">
-      <img src="./img/logo/3.png" alt="logotipo">
+      <h2 class="logoTxt">PROTEC</h2>
      </div>
      <div class="contactWidgets">
-      <span class="icon-whats">99-99-99-99</span>
-      <span class="icon-mail">contacto@protec.mx</span>
+      <a class="icon-whats" href="tel:+525550083543">55-50-08-35-43</a>
+      <a class="icon-mail" href="mailto:contacto@protec.mx">contacto@protec.mx</a>
      </div>
     </div>
     <nav class="mainNav">
@@ -74,50 +82,34 @@
       <span class="icon-menu nav-bar" id="btnMenu"></span>
      </div>
      <ul class="menu" id="menu">
-      <li class="menuItem"><a href="#" class="animation_border select menu-link">Inicio</a></li>
-      <li class="menuItem"><a href="#" class="animation_border menu-link">Nosotros</a></li>
+      <li class="menuItem"><a href="/index.html" class="animation_border select menu-link">Inicio</a></li>
+      <li class="menuItem"><a href="/pages/nosotros.html" class="animation_border menu-link">Nosotros</a></li>
       <!-- -------------------------- MENU-ITEMS CON SUBMENU -------------------------- -->
       <li class="menuItem container-submenu">
-       <a href="#" class="submenuBtn menu-link">Videovigilacia
-        <span class="icon-down"></span>
+       <a href="./pages/servicios.html" class="submenuBtn menu-link">Servicios
+        <!-- <span class="icon-down"></span> -->
        </a>
-       <ul class="submenu">
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum dolor.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum dolor.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum dolor.</a></li>
-       </ul>
+       <!-- <ul class="submenu">
+        <li class="submenuItem"><a href="#" class="menu-link">Cámaras Para Monitoreo Urbano E Interiores</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Control De Acceso</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Telefonía</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Alarmas Residencial Y Comercial</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Control De Extinción De Incendio</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Cerca Electrificada</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Localización Satelital</a>
+        </li>
+        <li class="submenuItem"><a href="#" class="menu-link">Radiocomunicación (VHF-UHF)</a>
+        </li>
+       </ul> -->
       </li>
-      <li class="menuItem container-submenu">
-       <a href="#" class="submenuBtn menu-link">Control de acceso
-        <span class="icon-down"></span>
-       </a>
-       <ul class="submenu">
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-       </ul>
-      </li>
-      <li class="menuItem container-submenu">
-       <a href="#" class="menu-link submenuBtn">Alarmas
-        <span class="icon-down"></span>
-       </a>
-       <ul class="submenu">
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-       </ul>
-      </li>
-      <li class="menuItem container-submenu">
-       <a href="#" class="menu-link submenuBtn">Detección de incendios
-        <span class="icon-down"></span>
-       </a>
-       <ul class="submenu">
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-        <li class="submenuItem"><a href="#" class="menu-link">Lorem, ipsum.</a></li>
-       </ul>
-      </li>
-      <!-- ----------------------------------------------------------------------- -->
+      <!------------------------------------------------------------------------- -->
+      <li class="menuItem"><a href="./pages/contacto.html" class="animation_border menu-link">Contácto</a></li>
      </ul>
     </nav>
    </div>
@@ -125,45 +117,213 @@
  </header>
  <main class="main">
   <section class="sectionOne">
-   <div class="sectionOne txtContainer">
-    <h3 class="title">Nosotros</h3>
-    <p class="parrafo">
-     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, repellendus laborum. Iste repellendus at
-     ipsa neque, nihil laudantium accusamus animi quo voluptate, voluptates, corrupti id deleniti nulla enim ullam nobis
-     laborum. Distinctio, modi. Necessitatibus nisi fuga alias numquam commodi, in veniam asperiores ex quisquam omnis
-     eius cum pariatur nihil dolor?
-    </p>
+   <div class="sectionOne-content">
+    <h3 class="title">Algunos de nuestros servicios</h3>
+    <div class="sectionOne-flex">
+     <div class="card circle1">
+      <div class="circle">
+       <img class="cam" src="./img/vectores/1.png" alt="Imagen">
+      </div>
+      <div class="circleTitle">
+       <h5>CCTV</h5>
+      </div>
+      <div class="circleTxt">
+       <p>Contamos con las mejores soluciones en circuito cerrado de televisión, adecuándonos a sus necesidades.</p>
+      </div>
+     </div>
+     <div class="card circle2">
+      <div class="circle">
+       <img src="./img/vectores/2.png" alt="Imagen">
+      </div>
+      <div class="circleTitle">
+       <h5>ALARMAS</h5>
+      </div>
+      <div class="circleTxt">
+       <p>Ofrecemos detectores de todo tipo: intrusión, incendio, gas, sísmico, presencia, y más.</p>
+      </div>
+     </div>
+     <div class="card circle3">
+      <div class="circle">
+       <img src="./img/vectores/3.png" alt="Imagen">
+      </div>
+      <div class="circleTitle">
+       <h5>CONTROL DE ACCESO</h5>
+      </div>
+      <div class="circleTxt">
+       <p>Si estás buscando un control total sobre las llegadas y salidas de tu personal, nosotros tenemos la mejor
+        opción.</p>
+      </div>
+     </div>
+     <div class="card circle4">
+      <div class="circle">
+       <img class="cercaElec" src="./img/vectores/4.png" alt="Imagen">
+      </div>
+      <div class="circleTitle">
+       <h5>CERCA ELECTRICA</h5>
+      </div>
+      <div class="circleTxt">
+       <p>Eficáz, protección en bardas, techos y perímetros expuestos, con sistema WIFI.</p>
+      </div>
+     </div>
+    </div>
    </div>
   </section>
   <section class="sectionTwo">
-   <div class="sectionOne txtContainer">
-    <h3 class="title">Servicios</h3>
-    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, repellendus laborum. Iste
-     repellendus at
-     ipsa neque, nihil laudantium accusamus animi quo voluptate, voluptates, corrupti id deleniti nulla enim ullam nobis
-     laborum. Distinctio, modi. Necessitatibus nisi fuga alias numquam commodi, in veniam asperiores ex quisquam omnis
-     eius cum pariatur nihil dolor?</p>
+   <div class="sectionTwo-container-flex">
+    <div class="sectionTwo-title-container">
+     <h3 class="title">¿Por qué instalar un sistema de seguridad?</h3>
+    </div>
+    <div class="sectionTwo-list-container">
+     <ul class="ul">
+      <li><span class="icon-arrow">Vigilar su casa o residencia de actividades sospechosas</span></li>
+      <li><span class="icon-arrow">Revisar la apertura de su negocio</span></li>
+      <li><span class="icon-arrow">Cuidar la integridad de sus seres queridos</span></li>
+      <li><span class="icon-arrow">Supervisar obras de construcción a distancia</span></li>
+      <li><span class="icon-arrow">Escuchar y ver lo que ocurre en la atención a los clientes</span></li>
+      <li><span class="icon-arrow">Incidentes en estacionamientos</span></li>
+     </ul>
+    </div>
+   </div>
+   <div class="sectionTwo-img-container">
+    <div>
+     <img src="./img/cameras/16.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/21.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/15.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/biometric/3.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/19.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/22.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/23.jpg" alt="img">
+    </div>
+    <div>
+     <img src="./img/cameras/24.jpg" alt="img">
+    </div>
    </div>
   </section>
-  <section class="contactForm">
-   <div class="contactForm__txtContainer">
-    <h3 class="title">Contáctanos</h3>
+  <section class="sectionThree">
+   <div class="sectionThree-container-flex">
+    <div class="sectionThree-img-container">
+     <img src="./img/cameras/6.jpg" alt="Imagen Cámara">
+    </div>
+    <div class="sectionThree-txt">
+     <h3 class="title">¿Necesitas adquirir equipo?</h3>
+     <p><b>¡¡NOSOTROS TE AYUDAMOS!!</b>
+      Trabajamos con las mejores marcas del mercado para entregarle a nuestros clientes la máxima calidad en sus
+      equipos.
+     </p>
+     <div class="btnContainer">
+      <a href="./pages/contacto.html"><button class="btn">Contáctanos</button></a>
+     </div>
+    </div>
    </div>
-   <div class="formContainer">
-    <form action="post" class="form">
-     <label for="name">Nombre:</label>
-     <input type="text" id="name">
-     <label for="lastName">Apellido:</label>
-     <input type="text" id="lastName">
-     <label for="email">Email:</label>
-     <input type="email" id="email">
-     <label for="tel">Teléfono:</label>
-     <input type="tel" id="number">
-     <label for="msn">Tu mensaje:</label>
-     <textarea name="Tu mensaje:" id="msn" cols="30" rows="10"></textarea>
-     <input type="submit" value="Enviar" class="btnForm">
-    </form>
+  </section>
+  <section class="sliderBrands">
+   <h3 class="title">Marcas Que Distribuimos</h3>
+   <!-- ------------------------------ CAROUSEL CLIENTES------------------------------ -->
+   <div id="brandLogos" class="splide" aria-label="Logos of some brands">
+    <div class="splide__track">
+     <ul class="splide__list">
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/1.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/2.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/3.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/4.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/5.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/6.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/7.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/8.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/9.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/10.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/11.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/12.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/13.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/14.png" alt="logotipo"></li>
+      <li class="splide__slide" data-splide-interval="3000"><img src="./img/logosMarcas/15.png" alt="logotipo"></li>
+     </ul>
+    </div>
    </div>
+   <!-- ----------------------------------------------------------------------- -->
+  </section>
+  <section class="sectionFour">
+   <h3 class="title">Algunos De Nuestros Clientes</h3>
+   <p class="sectionFour-txt">En <b>PROTEC&copy;</b> nos importas, nos adaptamos al tamaño de tus necesidades como
+    pequeña,
+    mediana, grande Empresa o
+    seguridad para tu hogar.
+    ¿Tienes algún proyecto en mente o una simple duda?
+    Contáctanos y uno de nuestros expertos te asistirá.</p>
+
+   <!-- ------------------------------ CARROUSEL CLIENTES------------------------------ -->
+   <div id="logoClients" class="splide" aria-label="Logos of some clients">
+    <div class="splide__track">
+     <ul class="splide__list">
+      <li class="splide__slide" data-splide-interval="4500">
+       <img src="./img/logosClientes/1.png" alt="LogoClient">
+       <div class="listSlider">
+        <h4>Sony Music | México</h4>
+        <ul>
+         <li>Sistema de incendio.</li>
+         <li>Mantenimiento.</li>
+         <li>CCTV.</li>
+        </ul>
+       </div>
+      </li>
+      <li class="splide__slide" data-splide-interval="4500">
+       <img src="./img/logosClientes/2.png" alt="LogoClient">
+       <div class="listSlider">
+        <h4>Municipio Acapulco Gro.</h4>
+        <ul>
+         <li>Sistema de radiocomunicación</li>
+         <li>Mantenimiento.</li>
+        </ul>
+       </div>
+      </li>
+      <li class="splide__slide" data-splide-interval="4500">
+       <img src="./img/logosClientes/3.png" alt="LogoClient">
+       <div class="listSlider">
+        <h4>Costco | México</h4>
+        <ul>
+         <li>Sistema de incendio.</li>
+         <li>Mantenimiento.</li>
+         <li>CCTV.</li>
+        </ul>
+       </div>
+      </li>
+      <li class="splide__slide" data-splide-interval="4500">
+       <img src="./img/logosClientes/4.png" alt="LogoClient">
+       <div class="listSlider">
+        <h4>Airfrance</h4>
+        <ul>
+         <li>Sistema de Incendio.</li>
+         <li>Sistema de Alarma.</li>
+         <li>Mantenimiento</li>
+        </ul>
+       </div>
+      </li>
+      <li class="splide__slide" data-splide-interval="4500">
+       <img src="./img/logosClientes/5.png" alt="LogoClient">
+       <div class="listSlider">
+        <h4>Aca Drinks Gro.</h4>
+        <ul>
+         <li>CCTV Remoto.</li>
+         <li>Mantenimiento.</li>
+        </ul>
+       </div>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- ----------------------------------------------------------------------- -->
   </section>
  </main>
  <footer class="mainFooter">
@@ -171,8 +331,7 @@
    <div class="mainFooterSection__container">
     <div class="mainFooterSection-content">
      <div class="logoFooter-container">
-      <img src="./img/logo/3.png" alt="logotipo">
-      <span></span>
+      <h2 class="logoTxt">PROTEC</h2>
      </div>
     </div>
     <div class="mainFooterSection-content social">
@@ -183,7 +342,7 @@
     </div>
     <div class="mainFooterSection-content phone">
      <h4>Teléfonos:</h4>
-     <span class="icon-phone">99-99-99-99</span>
+     <span class="icon-phone">55-50-08-35-43</span>
      <span class="icon-phone">99-99-99-99</span>
     </div>
    </div>
@@ -191,11 +350,23 @@
   <section class="copyright">
    <div class="copy">
     <p class="copyTxt">PROTEC&copy; 2022 Todos los derechos reservados</p>
-    <p class="author">Diseñado por Cristian Caballero</p>
+    <p class="author">Powered by Cristian Caballero</p>
    </div>
   </section>
  </footer>
- <script src="/js/menu.js"></script>
+ <script src="./js/menu.js"></script>
+ <script>
+  new Splide('#brandLogos', {
+   type: "loop",
+   autoplay: "true"
+  }).mount();
+ </script>
+ <script>
+  new Splide('#logoClients', {
+   type: "loop",
+   autoplay: "true"
+  }).mount();
+ </script>
 </body>
 
 </html>
